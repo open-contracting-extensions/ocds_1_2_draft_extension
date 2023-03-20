@@ -1,0 +1,28 @@
+{
+  "definitions": {
+    "SimpleIdentifier": {
+      "title": "Simple identifier",
+      "description": "An unambiguous reference to a resource within a given context.",
+      "type": "object",
+      "properties": {
+        "scheme": {
+          "title": "Scheme",
+          "description": "The list, register or system from which the identifier is taken.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "id": {
+          "title": "ID",
+          "description": "The identifier taken from the scheme.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "versionId": true
+        }
+      }
+    }
+  }
+}

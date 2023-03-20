@@ -1,0 +1,21 @@
+{
+  "name": {
+    "en": "OCDS 1.2 draft extension"
+  },
+  "description": {
+    "en": "Adds fields and definitions from the draft version of OCDS 1.2."
+  },
+  "documentationUrl": {
+    "en": "https://extensions.open-contracting.org/en/extensions/ocds_1_2_draft_extension"
+  },
+  "schemas": [
+    "release-schema.json"
+  ],
+  "compatibility": [
+    "1.1"
+  ],
+  "contactPoint": {
+    "name": "Open Contracting Partnership",
+    "email": "data@open-contracting.org"
+  }
+}
