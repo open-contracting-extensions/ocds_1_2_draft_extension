@@ -1,0 +1,44 @@
+{
+  "tender": {
+    "identifiers": [
+      {
+        "id": "PROC/2020/0024-ABC-FGHI",
+        "scheme": "internal"
+      }
+    ],
+    "exclusionGrounds": [
+      {
+        "type": "CRITERION.EXCLUSION.NATIONAL.OTHER"
+      }
+    ],
+    "documents": [
+      {
+        "languages": [
+          "en"
+        ]
+      }
+    ]
+  },
+  "awards": [
+    {
+      "estimatedValue": {
+        "amount": 4500,
+        "currency": "EUR"
+      },
+      "maximumValue": {
+        "amount": 5000,
+        "currency": "EUR"
+      }
+    }
+  ],
+  "contracts": [
+    {
+      "identifiers": [
+        {
+          "id": "CRN ABC:EFG/2020-01",
+          "scheme": "NL-TENDERNED"
+        }
+      ]
+    }
+  ]
+}

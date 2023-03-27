@@ -1,5 +1,78 @@
 {
   "definitions": {
+    "Tender": {
+      "properties": {
+        "identifiers": {
+          "title": "Additional tender identifiers",
+          "description": "Additional identifiers for this tender. This field can be used to provide local identifiers for the tender.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SimpleIdentifier"
+          },
+          "uniqueItems": true,
+          "wholeListMerge": true,
+          "minItems": 1
+        },
+        "exclusionGrounds": {
+          "title": "Exclusion grounds",
+          "description": "The criteria regarding the situation of a tenderer that can lead to its exclusion from the contracting process. For example: criminal convictions, bankruptcy, presence on a blacklist or failure to pay taxes.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      }
+    },
+    "Award": {
+      "properties": {
+        "maximumValue": {
+          "title": "Maximum value",
+          "description": "The estimated maximum value of the framework agreement, as a whole, as estimated when making the award.",
+          "$ref": "#/definitions/Value"
+        },
+        "estimatedValue": {
+          "title": "Estimated value",
+          "description": "The estimated value of the framework agreement, as a whole, as estimated when making the award.",
+          "$ref": "#/definitions/Value"
+        }
+      }
+    },
+    "Contract": {
+      "properties": {
+        "identifiers": {
+          "title": "Additional contract identifiers",
+          "description": "Additional identifiers for this contract. This field can be used to provide local identifiers for the contract.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SimpleIdentifier"
+          },
+          "uniqueItems": true,
+          "wholeListMerge": true,
+          "minItems": 1
+        }
+      }
+    },
+    "Document": {
+      "properties": {
+        "languages": {
+          "title": "Languages",
+          "description": "The languages used in the document, from the open [language](https://standard.open-contracting.org/{{version}}/{{lang}}/schema/codelists/#language) codelist. A [BCP47 language tag](https://www.w3.org/International/articles/language-tags/) is allowed, if there is a user need for the additional information.",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "codelist": "language.csv",
+          "openCodelist": true,
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
     "SimpleIdentifier": {
       "title": "Simple identifier",
       "description": "An unambiguous reference to a resource within a given context.",
@@ -11,7 +84,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "id": {
           "title": "ID",
@@ -20,9 +94,11 @@
             "string",
             "null"
           ],
-          "versionId": true
+          "versionId": true,
+          "minLength": 1
         }
-      }
+      },
+      "minProperties": 1
     }
   }
 }

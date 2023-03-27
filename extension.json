@@ -11,6 +11,9 @@
   "schemas": [
     "release-schema.json"
   ],
+  "codelists": [
+    "language.csv"
+  ],
   "compatibility": [
     "1.1"
   ],
