@@ -20,5 +20,8 @@
   "contactPoint": {
     "name": "Open Contracting Partnership",
     "email": "data@open-contracting.org"
-  }
+  },
+  "dependencies": [
+    "https://raw.githubusercontent.com/open-contracting-extensions/ocds_tender_contract_identifiers_extension/master/extension.json"
+  ]
 }

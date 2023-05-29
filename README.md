@@ -8,10 +8,7 @@ In the European Union, this extension's fields correspond to the following [eFor
 
 * BT-660 (Framework Re-estimated Value)
 * BT-709 (Framework Maximum Value)
-* BT-150 (Contract identifier)
 * BT-708 (Documents Official Language)
-* BT-67 (Exclusion Grounds)
-* BT-22 (Internal Identifier)
 
 For correspondences to eForms fields, see OCDS for eForms.
 
@@ -20,17 +17,6 @@ For correspondences to eForms fields, see OCDS for eForms.
 ```json
 {
   "tender": {
-    "identifiers": [
-      {
-        "id": "PROC/2020/0024-ABC-FGHI",
-        "scheme": "internal"
-      }
-    ],
-    "exclusionGrounds": [
-      {
-        "type": "CRITERION.EXCLUSION.NATIONAL.OTHER"
-      }
-    ],
     "documents": [
       {
         "id": "1",
@@ -51,18 +37,6 @@ For correspondences to eForms fields, see OCDS for eForms.
         "amount": 5000,
         "currency": "EUR"
       }
-    }
-  ],
-  "contracts": [
-    {
-      "id": "1",
-      "awardID": "1",
-      "identifiers": [
-        {
-          "id": "CRN ABC:EFG/2020-01",
-          "scheme": "NL-TENDERNED"
-        }
-      ]
     }
   ]
 }

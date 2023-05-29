@@ -1,29 +1,5 @@
 {
   "definitions": {
-    "Tender": {
-      "properties": {
-        "identifiers": {
-          "title": "Additional tender identifiers",
-          "description": "Additional identifiers for this tender. This field can be used to provide local identifiers for the tender.",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/SimpleIdentifier"
-          },
-          "uniqueItems": true,
-          "wholeListMerge": true,
-          "minItems": 1
-        },
-        "exclusionGrounds": {
-          "title": "Exclusion grounds",
-          "description": "The criteria regarding the situation of a tenderer that can lead to its exclusion from the contracting process. For example: criminal convictions, bankruptcy, presence on a blacklist or failure to pay taxes.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 1
-        }
-      }
-    },
     "Award": {
       "properties": {
         "maximumValue": {
@@ -35,21 +11,6 @@
           "title": "Estimated value",
           "description": "The estimated value of the framework agreement, as a whole, as estimated when making the award.",
           "$ref": "#/definitions/Value"
-        }
-      }
-    },
-    "Contract": {
-      "properties": {
-        "identifiers": {
-          "title": "Additional contract identifiers",
-          "description": "Additional identifiers for this contract. This field can be used to provide local identifiers for the contract.",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/SimpleIdentifier"
-          },
-          "uniqueItems": true,
-          "wholeListMerge": true,
-          "minItems": 1
         }
       }
     },
@@ -72,33 +33,6 @@
           "uniqueItems": true
         }
       }
-    },
-    "SimpleIdentifier": {
-      "title": "Simple identifier",
-      "description": "An unambiguous reference to a resource within a given context.",
-      "type": "object",
-      "properties": {
-        "scheme": {
-          "title": "Scheme",
-          "description": "The list, register or system from which the identifier is taken.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 1
-        },
-        "id": {
-          "title": "ID",
-          "description": "The identifier taken from the scheme.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "versionId": true,
-          "minLength": 1
-        }
-      },
-      "minProperties": 1
     }
   }
 }
