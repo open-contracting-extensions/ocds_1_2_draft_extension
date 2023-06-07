@@ -10,7 +10,7 @@ In the European Union, this extension's fields correspond to the following [eFor
 * BT-709 (Framework Maximum Value)
 * BT-708 (Documents Official Language)
 
-For correspondences to eForms fields, see OCDS for eForms.
+For correspondences to eForms fields, see [OCDS for eForms](https://standard.open-contracting.org/profiles/eforms/latest/en/).
 
 ## Example
 
