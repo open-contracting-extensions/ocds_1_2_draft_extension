@@ -2,6 +2,10 @@
 
 Adds fields, definitions and codelists from the draft version of OCDS 1.2 for use in [OCDS for eForms](https://standard.open-contracting.org/profiles/eforms/latest/en/).
 
+## Usage
+
+This extension is included in OCDS 1.2. It should therefore be used with OCDS 1.1 only.
+
 ## Legal context
 
 In the European Union, this extension's fields correspond to the following [eForms business terms](https://docs.ted.europa.eu/eforms/latest/reference/business-terms/):
@@ -10,10 +14,9 @@ In the European Union, this extension's fields correspond to the following [eFor
 * BT-709 (Framework Maximum Value)
 * BT-150 (Contract identifier)
 * BT-708 (Documents Official Language)
-* BT-67 (Exclusion Grounds)
 * BT-22 (Internal Identifier)
 
-For correspondences to eForms fields, see OCDS for eForms.
+For correspondences to eForms fields, see [OCDS for eForms](https://standard.open-contracting.org/profiles/eforms/latest/en/).
 
 ## Example
 
@@ -24,11 +27,6 @@ For correspondences to eForms fields, see OCDS for eForms.
       {
         "id": "PROC/2020/0024-ABC-FGHI",
         "scheme": "internal"
-      }
-    ],
-    "exclusionGrounds": [
-      {
-        "type": "CRITERION.EXCLUSION.NATIONAL.OTHER"
       }
     ],
     "documents": [
