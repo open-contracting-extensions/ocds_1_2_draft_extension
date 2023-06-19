@@ -12,6 +12,15 @@
           "uniqueItems": true,
           "wholeListMerge": true,
           "minItems": 1
+        },
+        "exclusionGrounds": {
+          "title": "Exclusion grounds",
+          "description": "The criteria regarding the situation of a tenderer that can lead to its exclusion from the contracting process. For example: criminal convictions, bankruptcy, presence on a blacklist or failure to pay taxes.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
         }
       }
     },
@@ -71,7 +80,7 @@
       "properties": {
         "scheme": {
           "title": "Scheme",
-          "description": "The list, register or system from which the identifier is taken. If the scope of the list, register or system from which the identifier is drawn is national, it is suggested to follow the pattern {​ISO 3166-1 alpha-2}-{​system}. If it is subnational, it is suggested to follow the pattern {​ISO 3166-2}-{​system}.",
+          "description": "The list, register or system from which the identifier is taken.",
           "type": [
             "string",
             "null"
