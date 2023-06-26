@@ -12,6 +12,7 @@
     "release-schema.json"
   ],
   "codelists": [
+    "+partyRole.csv",
     "language.csv"
   ],
   "compatibility": [

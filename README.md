@@ -22,6 +22,14 @@ For correspondences to eForms fields, see [OCDS for eForms](https://standard.ope
 
 ```json
 {
+  "parties": [
+    {
+      "id": "1",
+      "roles": [
+        "wholesaleBuyer"
+      ]
+    }
+  ],
   "tender": {
     "identifiers": [
       {
