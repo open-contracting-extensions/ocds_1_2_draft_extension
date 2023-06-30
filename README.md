@@ -2,9 +2,8 @@
 
 Adds fields, definitions and codelists from the draft version of OCDS 1.2 for use in [OCDS for eForms](https://standard.open-contracting.org/profiles/eforms/latest/en/).
 
-## Usage
 
-This extension is included in OCDS 1.2. It should therefore be used with OCDS 1.1 only.
+**Only use this extension with the OCDS for eForms profile.**
 
 ## Legal context
 
