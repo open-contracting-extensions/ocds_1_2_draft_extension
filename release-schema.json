@@ -1,4 +1,17 @@
 {
+  "properties": {
+    "links": {
+      "title": "Links",
+      "description": "Links to related resources. In a release, links relate to the individual release: for example, a link to a canonical version of the release in another OCDS publication. In a compiled release, links relate to the entire contracting (or planning) process: for example, a link to a resource in a non-OCDS publication that represents the entire contracting process. For references to related processes, see the `relatedProcesses` array.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Link"
+      },
+      "uniqueItems": true,
+      "omitWhenMerged": true,
+      "minItems": 1
+    }
+  },
   "definitions": {
     "Tender": {
       "properties": {
@@ -63,6 +76,28 @@
           "minItems": 1
         }
       }
+    },
+    "Link": {
+      "title": "Link",
+      "description": "A reference to a related resource.",
+      "type": "object",
+      "properties": {
+        "rel": {
+          "title": "Link relation type",
+          "description": "The relationship with the related resource, using the open [link relation type](https://standard.open-contracting.org/{{version}}/{{lang}}/schema/codelists/#link-relation-type) codelist.",
+          "type": "string",
+          "codelist": "linkRelationType.csv",
+          "openCodelist": true,
+          "minLength": 1
+        },
+        "href": {
+          "title": "Link target",
+          "description": "The URL of the related resource.",
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "minProperties": 1
     },
     "SimpleIdentifier": {
       "title": "Simple identifier",
